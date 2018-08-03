@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 普通帖 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/community_item_postheight_normal"
+    android:background="@color/color_white">
+
+    <View
+        android:id="@+id/bottomfarm"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/frame_darkgray" />
+
+    <!-- 顶部所有者 -->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/post_title_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/community_margin_content"
+        android:layout_marginRight="@dimen/community_margin_content"
+        android:layout_marginTop="@dimen/community_margin_content"
+        android:gravity="center_vertical"
+        android:lines="2"
+        android:textColor="@color/textColorPrimary" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/postowner_cover"
+        android:layout_width="@dimen/usercover_width_small"
+        android:layout_height="@dimen/usercover_width_small"
+        android:layout_above="@id/bottomfarm"
+        android:src="@mipmap/ic_usercover_default"
+        android:layout_margin="@dimen/community_margin_content" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/postreply_count"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/postowner_cover"
+        android:layout_alignBottom="@id/postowner_cover"
+        android:drawableLeft="@mipmap/ic_reply_big"
+        android:drawablePadding="@dimen/padding_content"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/textColorSecondary" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/postowner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/postowner_cover"
+        android:layout_alignBottom="@id/postowner_cover"
+        android:clickable="true"
+        android:layout_toLeftOf="@id/postreply_count"
+        android:layout_toRightOf="@id/postowner_cover"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColorSecondary" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/post_updatetime"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/postowner_cover"
+        android:layout_alignBottom="@id/postowner_cover"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/community_margin_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColorSecondary"
+        android:singleLine="true" />
+
+
+    <!-- 置顶 -->
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/postlable_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/ic_postlable_top"
+        android:visibility="gone" />
+
+    <!-- 精华 -->
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/postlable_essence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/ic_postlable_essence"
+        android:visibility="gone" />
+
+</RelativeLayout>

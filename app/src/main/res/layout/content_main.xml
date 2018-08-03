@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <RadioGroup
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/frame_darkgray"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1px"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/nav_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="3dp"
+            android:checked="true"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_nav_recomment"
+            android:drawableBottom="@drawable/ic_nav_indicator"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:textColor="@color/selector_green_and_grey"
+            android:textSize="10sp"
+            android:text="@string/nav_recommend" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/nav_video"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_nav_chat"
+            android:drawableBottom="@drawable/ic_nav_indicator"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:textSize="10sp"
+            android:textColor="@color/selector_green_and_grey"
+            android:text="@string/nav_video" />
+
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/nav_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_nav_chat"
+            android:drawableBottom="@drawable/ic_nav_indicator"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:textSize="10sp"
+            android:textColor="@color/selector_green_and_grey"
+            android:text="@string/nav_chat" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/nav_community"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_nav_community"
+            android:drawableBottom="@drawable/ic_nav_indicator"
+            android:gravity="center_horizontal"
+            android:background="@null"
+            android:textSize="10sp"
+            android:textColor="@color/selector_green_and_grey"
+            android:text="@string/nav_community" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/msgIndicator"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:visibility="invisible"
+        android:background="@drawable/ic_circle_red"
+        android:layout_alignTop="@id/nav" />
+
+    <LinearLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/nav"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

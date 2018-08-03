@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/selectedType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@color/color_white"
+        android:textColor="@color/textColorSecondary"
+        android:text="@string/selectedType" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lableforum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedType"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/color_white"
+        android:textColor="@color/textColorSecondary"
+        android:text="选择版块"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listforum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:layout_below="@id/lableforum"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/color_white"
+        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/labletype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listforum"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/color_white"
+        android:text="选择类型"
+        android:textColor="@color/textColorSecondary"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:layout_below="@id/labletype"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/color_white"
+        android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/layoutpic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/addpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_content"
+            android:background="@mipmap/btn_addpic" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/title_warpper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:layout_below="@id/listtype"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/color_white"
+        android:visibility="visible">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:imeOptions="actionNext"
+            android:gravity="center_vertical"
+            android:hint="标题"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_accent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px"
+        android:layout_above="@id/layoutpic"
+        android:layout_below="@id/title_warpper"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/color_white"
+        android:visibility="visible">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="内容"
+            android:imeOptions="actionSend"
+            android:minLines="5"
+            android:textColor="@color/textColorPrimary"></android.support.v7.widget.AppCompatEditText>
+    </android.support.design.widget.TextInputLayout>
+
+</RelativeLayout>

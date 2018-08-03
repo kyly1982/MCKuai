@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/raidersItem"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/recommand_item_height"
+    android:background="@color/color_white">
+
+    <ImageView
+        android:id="@+id/ownerCover"
+        android:layout_width="@dimen/usercover_width_small"
+        android:layout_height="@dimen/usercover_width_small"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@mipmap/ic_usercover_default" />
+
+    <TextView
+        android:id="@+id/lastTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_content"
+        android:layout_marginRight="0dp"
+        android:textColor="@color/textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/postTitle" />
+
+    <TextView
+        android:id="@+id/postType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/textColorSecondary"
+        app:layout_constraintRight_toLeftOf="@id/lastTime"
+        app:layout_constraintTop_toTopOf="@+id/lastTime" />
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:text="TextView"
+        android:visibility="gone"
+        android:textColor="@color/textColorSecondary"
+        app:layout_constraintBottom_toBottomOf="@id/ownerCover"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/ownerCover"
+        app:layout_constraintRight_toLeftOf="@id/postType"
+        app:layout_constraintTop_toTopOf="@id/ownerCover"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/margin_content"
+        android:textColor="@color/textColorPrimary"
+        android:maxLines="2"
+        app:layout_constraintBottom_toTopOf="@+id/lastTime"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>

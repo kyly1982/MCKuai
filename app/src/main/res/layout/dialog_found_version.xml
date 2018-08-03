@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/button_orange"
+        android:textSize="20sp"
+        android:textColor="@color/text_white"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF525252"
+        android:textSize="18sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="2dp" />
+
+    <TextView
+        android:id="@+id/feature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="2dp"
+        android:paddingLeft="25dp"
+        android:maxLines="5"
+        android:minLines="3"
+        android:textColor="#FF525252"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/ignore"
+            style="@style/button"
+            android:background="@drawable/button_orange_light"
+            android:layout_weight="1"
+            android:text="@string/ignore" />
+
+        <Button
+            android:id="@+id/update"
+            style="@style/button"
+            android:background="@drawable/button_orange"
+            android:layout_weight="1"
+            android:text="@string/update" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/only_wifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF525252"
+        android:textSize="14sp"
+        style="@style/checkbox"
+        android:text="@string/later_on_wifi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp" />
+
+</LinearLayout>

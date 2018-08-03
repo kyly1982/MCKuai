@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/usercenter_header_height"
+            android:background="@color/colorPrimary">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/usercover"
+                android:layout_width="@dimen/usercneter_usercover_width"
+                android:layout_height="@dimen/usercneter_usercover_width"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_usercover_default" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userlevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_usercenter_level"
+                android:paddingBottom="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:text="lv 0"
+                android:textColor="@color/color_white" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/setting"
+                android:layout_width="@dimen/usercenter_button_height"
+                android:layout_height="@dimen/usercenter_button_height"
+                android:background="@mipmap/ic_setting"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/share"
+                android:layout_width="@dimen/usercenter_button_height"
+                android:layout_height="@dimen/usercenter_button_height"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@mipmap/ic_share" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/mainCategory"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/header"
+            android:layout_marginBottom="2dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/community"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_usercenter_type"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/community"
+                android:textColor="@drawable/selector_white_and_grey" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/friend"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_usercenter_type"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/friend"
+                android:textColor="@drawable/selector_white_and_grey" />
+
+            <View
+                android:id="@+id/space_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/subCategory"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/mainCategory"
+            android:background="@color/usercenter_subtype"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <View
+                android:id="@+id/space_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/message"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_usercenter_subtype"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/message"
+                android:textColor="@drawable/selector_white_and_grey"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/dynamic"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_usercenter_subtype"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/dynamic"
+                android:textColor="@drawable/selector_white_and_grey"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/work"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_usercenter_subtype"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/work"
+                android:textColor="@drawable/selector_white_and_grey"
+                android:textSize="11sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/layut_opeartion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/usercenter_chatbutton_height"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/addfriend"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/usercenter_chatbutton_height"
+                android:layout_weight="1"
+                android:background="@drawable/ic_usercenter_addfriend"
+                android:textColor="@color/color_white" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@null" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/usercenter_chatbutton_height"
+                android:layout_weight="1"
+                android:background="@drawable/ic_usercenter_chat"
+                android:textColor="@color/color_white" />
+
+        </LinearLayout>
+
+        <com.malinskiy.superrecyclerview.SuperRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layut_opeartion"
+            android:layout_below="@id/subCategory"
+            android:background="@color/color_white"
+            app:layout_empty="@layout/emptyview_nodata"></com.malinskiy.superrecyclerview.SuperRecyclerView>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

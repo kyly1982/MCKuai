@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login">
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/login_qqlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/ic_qq_large" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/login_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_qqlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="9dp"
+        android:textColor="@color/text_white"
+        android:text="@string/login_hint" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/login_anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="9dp"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_hint"
+        android:text="@string/login_anonymous" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/loginmsg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_hint"
+        android:layout_above="@id/login_anonymous"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_hint" />
+
+</RelativeLayout>

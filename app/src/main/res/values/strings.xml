@@ -1,0 +1,187 @@
+<resources>
+    <string name="app_name">MCkuai8</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--配置-->
+    <string name="preferences_filename">config</string>
+    <string name="preferences_isFirstBoot">FIRSTBOOT</string>
+    <string name="preferences_token">TOKEN</string>
+    <string name="preferences_tokentime">CERTIFIEDTIME</string>
+    <string name="preferences_tokenexpires">INVALIDTIME</string>
+    <string name="preferences_tokentype">TOKENTYPE</string>
+    <string name="preferences_token_rongcloud">RONGCLOUD_TOKEN</string>
+    <string name="preferences_id">USER_ID</string>
+    <string name="preferences_level">USER_LEVEL</string>
+    <string name="preferences_process">MC_PROCESS</string>
+    <string name="preferences_addr">MC_ADDR</string>
+    <string name="preferences_cover">USER_COVER</string>
+    <string name="preferences_username">USER_NAME</string>
+    <string name="preferences_nickname">USER_NICKNAME</string>
+    <string name="preferences_gender">USER_GENDER</string>
+    <string name="preferences_score">SCORE</string>
+    <string name="preferences_wa_score">WA_SCORE</string>
+    <string name="preferences_wa_answercount">WA_ANSERCOUNT</string>
+    <string name="preferences_wa_uploadcount">WA_UPLOADCOUNT</string>
+    <string name="preferences_wa_scorerank">WA_SCORERANK</string>
+    <string name="preferences_wa_ranking">WA_RANKING</string>
+    <string name="preferences_leadtag">LEAD_TAG</string>
+    <string name="preferences_admask">AD_MASK</string>
+    <string name="preferences_dasheng">VIDEO_DASHENG</string>
+
+    <!--数据库名称-->
+    <string name="dbname">MCData.db</string>
+    <!--空数据-->
+    <string name="emptyview_hint">什么也没有！</string>
+    <string name="hint_loading">正在加载！</string>
+
+    <!--缓存-->
+    <string name="cache_root">cache</string>
+    <string name="imagecache_dir">image</string>
+    <string name="cache_rankinglist">rank.dat</string>
+    <string name="preferences_file">config</string>
+    <string name="jsoncache_dir">json</string>
+    <string name="jsoncache_file">jsonCache.dat</string>
+
+    <!--接口-->
+    <string name="interface_domainName">http://api.mckuai.com/</string>
+    <!-- 搜索-->
+    <string name="interface_search">interface.do?act=search</string>
+    <string name="interface_forumlist">interface.do?act=forumList</string>
+    <string name="interface_postlist">interface.do?act=talkList</string>
+    <string name="interface_showPost">interface.do?act=talkOne</string>
+    <!-- 打赏 -->
+    <string name="interface_reward">interface.do?act=daShang</string>
+    <string name="interface_reward_new">interface.do?act=like</string>
+    <!-- 收藏帖子interface.do?act=toCollect&userId=&talkId= // -->
+    <string name="interface_collectpost">interface.do?act=toCollect</string>
+    <!-- 收藏的帖子接口，参数：id=userid,page=页数 -->
+    <string name="interface_collectpostlist">interface.do?act=collectTalk</string>
+    <!-- 取消收藏帖子interface.do?act=cancleCollect&userId=&talkId= -->
+    <string name="interface_cancle_collectpost">interface.do?act=cancleCollect</string>
+    <!-- 跟帖，跟帖前取参数window.interface.setparameters(),window.interface.getParameters() -->
+    <string name="interface_replypost">interface.do?act=followTalk</string>
+    <!-- 回复楼层 -->
+    <string name="interface_replyfloor">interface.do?act=replyTalk</string>
+    <!-- 上传图片 回图片路径字符串  http://cdn.mckuai.com/xxx.jpg 需加在content 帖子内容后面 -->
+    <string name="interface_uploadimage">group.do?act=uploadImg</string>
+    <string name="interface_uploadpost">interface.do?act=addTalk</string>
+    <!-- 是否打赏或收藏 -->
+    <string name="interface_getpostmark">interface.do?act=isCollect</string>
+    <!-- 个人中心接口，参数：id=用户id&page=&type=&messageType=    type{message（消息）,dynamic（动态）,work（作品）}; messageType{ system（系统）,reply（@）} -->
+    <string name="interface_usercenter">interface.do?act=center</string>
+    <!-- 检查更新 -->
+    <string name="interface_checkupgread">interface.do?act=androidUpdate</string>
+    <!--登录-->
+    <string name="interface_login">interface.do?act=login</string>
+    <!-- 更新位置，参数：id=&addr= -->
+    <string name="interface_updateLocation">interface.do?act=updateAddr</string>
+    <!-- 更新昵称 -->
+    <string name="interface_update_userinfo">interface.do?act=saveUser</string>
+    <!-- 更新头像 -->
+    <string name="interface_update_cover">interface.do?act=headImg</string>
+    <!-- 关注的用户列表接口，参数：id=用户id&page=页数 -->
+    <string name="interface_fellowuserlist">interface.do?act=attentionUser</string>
+    <!-- 关注用户接口，参数：ownerId=当前用户id&otherId=被关注的用户id -->
+    <string name="interface_fellowuser">interface.do?act=attention</string>
+    <!-- 取消关注用户 -->
+    <string name="interface_cancle_fellowuser">/interface.do?act=cancleAttention</string>
+    <!-- 用户是否被关注 -->
+    <string name="interface_getusermark">interface.do?act=isAttention</string>
+    <!-- quick reply -->
+    <string name="interface_quickreply">interface.do?act=addReplyByCenter</string>
+
+    <!-- 更新-->
+    <string name="download_failure">下载新版本失败 !</string>
+    <string name="is_latest_version_label">已是最新版本！</string>
+    <string name="latest_version_title">发现新版本</string>
+    <string name="update_latest_version_title">发现新版本(%1$s), 升级中&#8230;</string>
+    <string name="later_on_wifi">在wifi网络下自动升级！</string>
+    <string name="later_update_tip">Updating&#8230; (Submited when you\'r NOT on Wifi)</string>
+    <string name="update">更新</string>
+    <string name="ignore">忽略</string>
+
+    <!--错误提示-->
+    <string name="error_pretreatmentres_ponsefalse">预解析失败，原因:%1$s</string>
+    <string name="error_pretreatmentres_nullerror">返回数据为空或长度不足！</string>
+    <string name="error_pretreatmentres_format">预解析失败，原因未知！</string>
+    <string name="error_serverfalse_unknow">服务器返回失败，原因未知！</string>
+    <string name="error_serverfalse">服务器返回失败，原因:%1$s</string>
+    <string name="error_parsefalse">解析返回数据时失败，请重试！</string>
+    <string name="error_requestfalse">请求失败，原因：%1$s</string>
+    <string name="error_userformat_noself">返回的用户信息不正确！</string>
+    <string name="error_serverreturn_unkonw">服务器返回数据格式不正确！</string>
+    <string name="error_loginfaile_mc">登录到服务器失败，原因：%1$s</string>
+    <string name="error_loginfaile_wx">微信授权失败，请重试！</string>
+    <string name="error_code">错误代码：%1$d</string>
+
+    <!--登录-->
+    <string name="login">登录</string>
+    <string name="login_hint">使用QQ账号登录</string>
+    <string name="login_anonymous">>>随便看看</string>
+    <string name="login_text">QQ账号登录</string>
+    <string name="login_auth_getinfo">获取账号信息……</string>
+    <string name="login_auth_cancle">已取消登录！</string>
+    <string name="login_auth_platform_fail">收到完成回调，但回调平台不正确</string>
+    <string name="login_auth_response_to_short">收到完成回调，但返回数据长度不足</string>
+    <string name="login_MCServer">登录服务器……</string>
+    <string name="mc_Err">登录服务器时失败，原因:%1$s</string>
+    <string name="login_RongIM">登录聊天服务器……</string>
+    <string name="login_IM_Err_UnInit">聊天模块功能异常，请重启软件！</string>
+    <string name="login_IM_Err">登录聊天服务器时失败，原因:%1$s</string>
+    <string name="im_Err_TokenIncorrect">令牌无效！</string>
+    <string name="qq_err">登录到QQ失败，原因:%1$s</string>
+    <string name="tryReLogin">是否重新登录？</string>
+    <string name="reLogin">重新登录</string>
+
+    <!--个人中心-->
+    <string name="usercenter_tag_userid">USER_ID</string>
+    <string name="usercenter_tag_user">USER_OBJECT</string>
+    <string name="usercenter_userlevel">LV %1$d</string>
+    <string name="cartoon">漫画</string>
+    <string name="community">社区</string>
+    <string name="friend">朋友</string>
+    <string name="message">消息</string>
+    <string name="dynamic">动态</string>
+    <string name="work">作品</string>
+    <string name="allMessage">全部</string>
+    <string name="atMessage">\@你</string>
+    <string name="systemMessage">系统消息</string>
+    <string name="replyYou">回复你的帖子</string>
+    <string name="atYou">\@了你</string>
+    <string name="replyPost">回复了</string>
+    <string name="createPost">创造了</string>
+    <string name="userId">USER_ID</string>
+    <string name="addtoPackage">加入背包</string>
+    <string name="makeChat">私聊</string>
+    <string name="preservation">保存</string>
+    <string name="cartoon_comment">评论了</string>
+    <string name="cartoon_prise">点赞了</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="uncheck">未选择，请重试！</string>
+    <string name="retry">重试</string>
+
+    <string name="nav_recommend">推荐</string>
+    <string name="nav_video">视频</string>
+    <string name="nav_chat">聊天</string>
+    <string name="nav_community">社区</string>
+
+    <!--社区首页-->
+    <string name="community_postlable_new">最新</string>
+    <string name="community_postlable_essence">精华</string>
+    <string name="community_postlable_top">推荐</string>
+
+    <!--帖子详情-->
+    <string name="tag_post">TAG_POST</string>
+
+    <!--发贴-->
+    <string name="selectedType">版块：%1$s类型：%2$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_raiders">RaidersActivity</string>
+</resources>

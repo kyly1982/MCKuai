@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@null">
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+        android:id="@+id/community_forumlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/community_forumlist_height"
+        android:paddingTop="@dimen/margin_content"
+        android:paddingBottom="@dimen/margin_content"
+        android:background="@color/colorPrimary"
+        app:layout_empty="@layout/emptyview_nodata">
+
+    </com.malinskiy.superrecyclerview.SuperRecyclerView>
+
+
+    <RadioGroup
+        android:id="@+id/posttype_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/community_forumlist"
+        android:background="@color/color_white"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/lastpost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/community_postlable_new"
+            android:textColor="@color/selector_green_and_grey" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/essencepost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/community_postlable_essence"
+            android:textColor="@color/selector_green_and_grey" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/toppost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/community_postlable_top"
+            android:textColor="@color/selector_green_and_grey" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divier"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/posttype_indicator"
+        android:background="@color/divierColor_Dark" />
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+        android:id="@+id/community_postlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px"
+        android:layout_below="@id/posttype_indicator"
+        android:background="@color/color_white"
+        android:layout_alignParentBottom="true"
+        app:layout_empty="@layout/emptyview_nodata">
+
+    </com.malinskiy.superrecyclerview.SuperRecyclerView>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/community_createpost"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/ic_createpost"
+        android:visibility="visible"
+        android:layout_margin="@dimen/community_margin_layout" />
+
+
+</RelativeLayout>

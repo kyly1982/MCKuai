@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Aditem"
+    android:layout_width="match_parent"
+    android:layout_height="183dp"
+    android:background="@null">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/AD_Cover"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/AD_Title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textColor="@color/textColorADTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AD_Cover" />
+
+
+</android.support.constraint.ConstraintLayout>

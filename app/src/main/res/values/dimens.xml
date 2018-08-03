@@ -1,0 +1,80 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--通用-->
+    <dimen name="usercover_width">33.5dp</dimen>
+    <dimen name="usercover_width_small">21.5dp</dimen>
+    <dimen name="margin_content">9dp</dimen>
+    <dimen name="padding_content">4.5dp</dimen>
+
+
+    <!--社区-->
+    <dimen name="community_forumlist_height">66dp</dimen>
+    <dimen name="community_forum_height">46dp</dimen>
+    <dimen name="community_forum_radius">23dp</dimen>
+    <dimen name="community_margin_layout">16dp</dimen>
+    <dimen name="community_margin_content">5dp</dimen>
+    <dimen name="community_item_postheight_normal">74dp</dimen>
+
+    <!--个人中心-->
+    <dimen name="usercenter_header_height">100dp</dimen>
+    <dimen name="usercneter_usercover_width">100dp</dimen>
+    <dimen name="usercenter_chatbutton_height">40dp</dimen>
+    <dimen name="usercenter_item_cartoon_height">81dp</dimen>
+    <dimen name="usercenter_item_layoutpadding">5dp</dimen>
+    <dimen name="usercenter_item_catoon_imagewidth">50dp</dimen>
+    <dimen name="usercenter_item_cartoon_usercover_width">32dp</dimen>
+    <dimen name="usercneter_item_cartoon_workmargin">3dp</dimen>
+    <dimen name="usercenter_item_community_height">87dp</dimen>
+    <dimen name="usercenter_item_friend_height">68dp</dimen>
+    <dimen name="usercenter_item_friend_padding">9dp</dimen>
+    <dimen name="usercenter_button_height">43dp</dimen>
+    <dimen name="usercenter_button_weight">86dp</dimen>
+    <dimen name="usercenter_button_radius">21.5dp</dimen>
+
+    <!--聊天-->
+    <dimen name="conversation_item_height">65dp</dimen>
+
+    <!--推荐页item-->
+    <dimen name="recommand_item_height">83dp</dimen>
+    <dimen name="recommand_item_image_width">100dp</dimen>
+    <dimen name="recommand_item_image_height">65dp</dimen>
+
+    <!--广告-->
+    <dimen name="item_ad_height">183dp</dimen>
+    <dimen name="item_ad_title_height">28dp</dimen>
+
+    <!--字体-->
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_accent">14sp</dimen>
+    <dimen name="text_normal">12sp</dimen>
+    <dimen name="text_hint">10sp</dimen>
+
+    <!-- 摧荐页item相关高度 -->
+    <dimen name="item_video_height">189dp</dimen>
+    <dimen name="item_video_cove_height">144dp</dimen>
+
+    <!-- 摧荐页item相关高度 -->
+    <dimen name="item_recommend_cove_height">144dp</dimen>
+    <dimen name="item_recommend_height">189dp</dimen>
+    <dimen name="group_divider_height">26dp</dimen>
+    <dimen name="item_divider_height">11dp</dimen>
+
+
+    <dimen name="app_bar_height">180dp</dimen>
+
+    <dimen name="item_friend_height">70dp</dimen>
+    <dimen name="item_friend_paddingtop">15dp</dimen>
+
+    <dimen name="dividerPrimary">5dp</dimen>
+    <dimen name="dividerSecondary">1dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+</resources>

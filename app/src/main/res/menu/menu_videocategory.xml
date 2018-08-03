@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/action_ordertype"
+        android:visible="false">
+        <item
+            android:id="@+id/action_new"
+            android:orderInCategory="11"
+            android:title="最新"
+            android:visible="false"
+            app:showAsAction="ifRoom" />
+        <item
+            android:id="@+id/action_hot"
+            android:orderInCategory="12"
+            android:title="最热"
+            app:showAsAction="ifRoom" />
+    </group>
+
+
+    <group
+        android:id="@+id/action_videotype"
+        android:checkableBehavior="single"
+        android:visible="false">
+        <item
+            android:id="@+id/action_cartoon"
+            android:checked="true"
+            android:title="动画"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/action_knowledge"
+            android:title="教程"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/action_map"
+            android:title="地图"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/action_mod"
+            android:title="模组"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/action_show"
+            android:title="鉴赏"
+            app:showAsAction="collapseActionView" />
+        <item
+            android:id="@+id/action_online"
+            android:title="联机"
+            app:showAsAction="collapseActionView" />
+    </group>
+
+
+</menu>

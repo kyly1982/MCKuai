@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/usercenter_item_community_height"
+    android:background="@color/color_white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/usercover"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_margin="@dimen/usercenter_item_layoutpadding"
+        android:src="@mipmap/ic_usercover_default" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/usercover"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/usercover"
+        android:layout_marginRight="@dimen/usercenter_item_layoutpadding"
+        android:gravity="center_vertical"
+        android:textColor="@color/textHint"
+        android:textSize="@dimen/text_accent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@id/usercover"
+        android:layout_alignTop="@id/usercover"
+        android:layout_marginEnd="@dimen/usercenter_item_layoutpadding"
+        android:layout_marginRight="@dimen/usercenter_item_layoutpadding"
+        android:layout_toEndOf="@id/usercover"
+        android:layout_toRightOf="@id/usercover"
+        android:gravity="center_vertical"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        android:textColor="@color/textHint"
+        android:text="用户名"
+        android:textSize="@dimen/text_accent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/messagetag"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_alignBottom="@id/usercover"
+        android:layout_alignTop="@id/usercover"
+        android:layout_toRightOf="@id/username"
+        android:gravity="center"
+        android:textColor="@color/textHint"
+        android:textSize="@dimen/text_accent"
+        android:text="@string/atYou" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/posttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/usercenter_item_layoutpadding"
+        android:layout_marginRight="@dimen/usercenter_item_layoutpadding"
+        android:layout_below="@id/usercover"
+        android:singleLine="true"
+        android:textColor="@color/textHint"
+        android:textSize="@dimen/text_accent" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/messagecontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/usercenter_item_layoutpadding"
+        android:lines="1"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_accent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divierColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

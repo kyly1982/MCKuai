@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mckuai.imc">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--使用QQ纯图分享或避免其它平台纯图分享的时候图片不被压缩-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!--定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--相机-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--升级使用-->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <application
+        android:name=".Base.MCKuai"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${APP_NAME}"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PostActivity"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PublishPostActivity"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchActivtiy_new"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProfileEditerActivity"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait" />
+
+        <!-- 会话列表 -->
+        <activity
+            android:name=".Activity.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.mckuai.imc"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <!-- 聚合会话列表 -->
+        <activity
+            android:name=".Activity.SubConversationListActivtiy"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.mckuai.imc"
+                    android:pathPrefix="/subconversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.UserCenterActivity2"
+            android:label="个人中心"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activity.StartActivity"
+            android:label="${APP_NAME}"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.RaidersActivity"
+            android:label="@string/title_activity_raiders"
+            android:theme="@style/AppTheme" />
+
+
+        <!-- ********************************************配置腾讯的相关SDK******************************************** -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101155101" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <!-- ********************************************百度定位******************************************** -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="8BeV0Eu1X94jbXQgFckSaL8L" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+
+        <!-- ********************************************友盟相关******************************************** -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="55127cc0fd98c5421700098f" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="1074161280.000000" />
+
+
+        <!-- ********************************************融云相关******************************************** -->
+        <!--!&#45;&#45; 融云此部分代码需要移植到您的 app 下的 manifest，并且 authorities 指定您的包名。例如：com.android.FileProvider &ndash;&gt;-->
+        <!-- 否则使用拍照功能时，会崩溃 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.mckuai.imc.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+    </application>
+
+</manifest>

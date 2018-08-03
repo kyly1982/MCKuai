@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "514791894481",
+    "firebase_url": "https://mckuai8.firebaseio.com",
+    "project_id": "mckuai8",
+    "storage_bucket": "mckuai8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514791894481:android:9545ae97f5fd8a42",
+        "android_client_info": {
+          "package_name": "com.mckuai.imc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514791894481-bsatpevh3k1mhiuq6fjfdrlj0130mvth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mckuai.imc",
+            "certificate_hash": "f95dfc6b064a49c41d86fadcf93221cecd01cc4e"
+          }
+        },
+        {
+          "client_id": "514791894481-dhejhfd213t11ag1ahrvchdfg7opocsb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzI5WZaW6lQymaK71huKcArRlZBJzwOxU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514791894481-j6tvd64v40tlfaeps6d9bim5r87n204v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tars.mckuai",
+                "app_store_id": "955748107"
+              }
+            },
+            {
+              "client_id": "514791894481-dhejhfd213t11ag1ahrvchdfg7opocsb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

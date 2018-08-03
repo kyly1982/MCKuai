@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 普通帖 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_recommend_height"
+    android:background="@null">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/postcover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_recommend_cove_height"
+        android:scaleType="fitXY"
+        android:src="@mipmap/videocover_mask" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/posttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/postcover"
+        android:layout_marginBottom="@dimen/margin_content"
+        android:layout_marginLeft="@dimen/margin_content"
+        android:layout_marginRight="@dimen/margin_content"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/text_white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white"
+        android:gravity="center_vertical"
+        android:layout_below="@id/postcover"
+        android:paddingLeft="@dimen/margin_content"
+        android:paddingRight="@dimen/margin_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/ownercover"
+            android:layout_width="@dimen/usercover_width_small"
+            android:layout_height="@dimen/usercover_width_small"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/ic_usercover_default" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/postreply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/ic_reply_big"
+            android:drawablePadding="@dimen/margin_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/textColorSecondary"
+            android:text="0000" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/posttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="5分钟前"
+            android:textColor="@color/textColorSecondary" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/ownername"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_content"
+            android:layout_marginRight="@dimen/margin_content"
+            android:layout_toEndOf="@id/ownercover"
+            android:layout_toLeftOf="@id/postreply"
+            android:layout_toRightOf="@id/ownercover"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="用户名"
+            android:textColor="@color/textColorSecondary" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

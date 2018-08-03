@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 直播帖 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <View
+        android:id="@+id/bottomfarm"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/frame_darkgray" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/videocover_mask"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/vidio_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/video_cover"
+        android:layout_marginBottom="@dimen/margin_content"
+        android:layout_marginLeft="@dimen/margin_content"
+        android:layout_marginRight="@dimen/margin_content"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textColor="@color/text_white" />
+
+
+    <RelativeLayout
+        android:id="@+id/video_info"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/video_cover"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/community_margin_content"
+        android:paddingRight="@dimen/community_margin_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/video_ownercover"
+            android:layout_width="@dimen/usercover_width_small"
+            android:layout_height="@dimen/usercover_width_small"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_usercover_default" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/video_replycount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/video_ownercover"
+            android:layout_alignBottom="@id/video_ownercover"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/ic_reply_big"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColorSecondary"
+            android:drawablePadding="@dimen/community_margin_content"
+            android:text="8888" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/video_replytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/video_ownercover"
+            android:layout_alignBottom="@id/video_ownercover"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColorSecondary"
+            android:text="刚刚" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/video_ownername"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/video_ownercover"
+            android:layout_toLeftOf="@id/video_replycount"
+            android:layout_marginRight="@dimen/community_margin_content"
+            android:paddingLeft="@dimen/community_margin_content"
+            android:clickable="true"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/textColorSecondary"
+            android:text="名字" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

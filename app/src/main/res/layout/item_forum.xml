@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/community_forumname"
+    android:layout_width="@dimen/community_forum_height"
+    android:layout_height="@dimen/community_forum_height"
+    android:layout_gravity="center"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:background="@drawable/item_forum"
+    android:button="@null"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="2"
+    android:text="版块\n名称"
+    android:textColor="@color/selector_forum"
+    android:textSize="@dimen/text_normal">
+
+
+</android.support.v7.widget.AppCompatRadioButton>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#38ca44</color>
+    <color name="colorPrimaryDark">#31B765</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#4D4D4D</color>
+    <color name="textColorPrimary_Light">#FFFFFFFF</color>
+    <color name="textColorSecondary">#b4b4b4</color>
+    <color name="textColorSecondary_Dark">#66FFFFFF</color>
+    <color name="textHint">#B2B0AE</color>
+    <color name="textColorAccentr">#31b765</color>
+    <color name="textGreen">#38CA44</color>
+    <color name="textAccent">#FFFFFF</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorADTitle">#545454</color>
+
+    <!--snackbar动作文本色彩-->
+    <color name="msg_normal">#00FF00</color>
+    <color name="msg_warning">#FFFF00</color>
+    <color name="msg_error">#FF0000</color>
+
+    <!--导航栏字体色彩-->
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_green">#38CA44</color>
+
+    <!-- 边框色 -->
+    <color name="frame_darkgray">#EBEBEB</color>
+    <color name="frame_green">#04FF04</color>
+    <!-- 登录 -->
+    <color name="login_pressed">#30BB55</color>
+    <color name="login_normal">#38BE5C</color>
+
+    <color name="color_forum_normal">#00000000</color>
+    <color name="color_forum_selected">#22A53D</color>
+    <color name="textcolor_forum_normal">#B6A8A5</color>
+    <color name="textcolor_forum_checked">#24922F</color>
+
+    <color name="divierColor">#E8E8E8</color>
+    <color name="divierColor_Dark">#383236</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <!--通用色彩-->
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+
+    <color name="coloruserlevel">#FFC203</color>
+    <!--个人中心-->
+    <color name="usercenter_subtype">#5A5148</color>
+
+    <color name="dividerColorPrimary">#E8E8E8</color>
+    <color name="dividerColorSecondary">#383236</color>
+
+    <color name="black_overlay">#66000000</color>
+    <!--56 196 68-->
+</resources>

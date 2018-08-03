@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:clickable="true"
+    android:padding="@dimen/activity_vertical_margin">
+
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/usercover"
+        android:layout_width="@dimen/usercenter_header_height"
+        android:layout_height="@dimen/usercenter_header_height"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/ic_usercover_default"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/usercenter_header_height"
+        android:layout_alignTop="@id/usercover"
+        android:layout_toLeftOf="@id/usercover"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="头像"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_accent" />
+
+    <View
+        android:id="@+id/divier_usercoer"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/usercover"
+        android:layout_marginTop="@dimen/margin_content"
+        android:background="@color/frame_darkgray" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lable_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/usercover"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:text="昵称："
+        android:textSize="@dimen/text_accent"
+        android:visibility="gone" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/usernick_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/divier_usercoer"
+        android:hint="昵称"
+        app:errorEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/usernick"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textGreen"
+            android:textSize="@dimen/text_accent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@id/usernick_wrapper"
+        android:background="@color/frame_darkgray" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lable_useraddress"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/lable_nick"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="地址："
+        android:textSize="@dimen/text_accent"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/useraddress_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/lable_useraddress"
+        android:layout_below="@id/usernick_wrapper"
+        android:layout_toRightOf="@id/lable_useraddress"
+        android:hint="城市"
+        app:errorEnabled="true">
+
+        <android.support.v7.widget.AppCompatAutoCompleteTextView
+            android:id="@+id/useraddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:completionHint="选择你所在的城市"
+            android:completionThreshold="1"
+            android:imeOptions="actionDone"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_accent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignBottom="@id/useraddress_wrapper"
+        android:background="@color/frame_darkgray" />
+
+
+    <LinearLayout
+        android:id="@+id/uploadview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在更新，请稍候！" />
+    </LinearLayout>
+
+</RelativeLayout>

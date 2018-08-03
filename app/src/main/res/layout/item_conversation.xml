@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/color_white">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/usercover"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="@dimen/usercenter_item_layoutpadding"
+        android:scaleType="fitXY" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/usercover"
+        android:layout_marginTop="3dp"
+        android:singleLine="true"
+        android:textColor="@color/textColorPrimary"
+        android:layout_toRightOf="@id/usercover"
+        android:text="用户名" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/username"
+        android:layout_marginBottom="@dimen/usercenter_item_layoutpadding"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/textColorSecondary"
+        android:textSize="@dimen/text_hint"
+        android:text="01-20" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/lastmessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@id/username"
+        android:gravity="center_vertical"
+        android:layout_below="@id/username"
+        android:layout_above="@id/time"
+        android:singleLine="true"
+        android:textColor="@color/textColorSecondary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divierColor"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
